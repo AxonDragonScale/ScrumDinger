@@ -15,6 +15,8 @@
 		3787182D26064DC300390240 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787182C26064DC300390240 /* CardView.swift */; };
 		3787183026064EC800390240 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787182F26064EC800390240 /* Color+Codable.swift */; };
 		378718582606638200390240 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378718572606638200390240 /* ScrumsView.swift */; };
+		3787185B26066B8D00390240 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787185A26066B8D00390240 /* DetailView.swift */; };
+		378718602606738300390240 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787185F2606738300390240 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		3787182C26064DC300390240 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3787182F26064EC800390240 /* Color+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		378718572606638200390240 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
+		3787185A26066B8D00390240 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		3787185F2606738300390240 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				378718162606402A00390240 /* Info.plist */,
 				378718132606402A00390240 /* Preview Content */,
 				378718572606638200390240 /* ScrumsView.swift */,
+				3787185A26066B8D00390240 /* DetailView.swift */,
+				3787185F2606738300390240 /* EditView.swift */,
 			);
 			path = ScrumDinger;
 			sourceTree = "<group>";
@@ -160,7 +166,9 @@
 			files = (
 				378718102606402800390240 /* MeetingView.swift in Sources */,
 				378718582606638200390240 /* ScrumsView.swift in Sources */,
+				378718602606738300390240 /* EditView.swift in Sources */,
 				3787182926064BD300390240 /* DailyScrum.swift in Sources */,
+				3787185B26066B8D00390240 /* DetailView.swift in Sources */,
 				3787182D26064DC300390240 /* CardView.swift in Sources */,
 				3787183026064EC800390240 /* Color+Codable.swift in Sources */,
 				3787180E2606402800390240 /* ScrumDingerApp.swift in Sources */,
