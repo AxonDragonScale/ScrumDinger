@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3783158F2609245700ADBBBA /* ScrumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3783158E2609245700ADBBBA /* ScrumData.swift */; };
 		3787180E2606402800390240 /* ScrumDingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787180D2606402800390240 /* ScrumDingerApp.swift */; };
 		378718102606402800390240 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787180F2606402800390240 /* MeetingView.swift */; };
 		378718122606402A00390240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378718112606402A00390240 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3783158E2609245700ADBBBA /* ScrumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumData.swift; sourceTree = "<group>"; };
 		3787180A2606402800390240 /* ScrumDinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrumDinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3787180D2606402800390240 /* ScrumDingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumDingerApp.swift; sourceTree = "<group>"; };
 		3787180F2606402800390240 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				3787182826064BD300390240 /* DailyScrum.swift */,
 				3787186C2607B74F00390240 /* ScrumTimer.swift */,
 				3787187A2607CB1D00390240 /* History.swift */,
+				3783158E2609245700ADBBBA /* ScrumData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				3787187B2607CB1D00390240 /* History.swift in Sources */,
 				378718602606738300390240 /* EditView.swift in Sources */,
 				378718732607C00D00390240 /* AVPlayer+Ding.swift in Sources */,
+				3783158F2609245700ADBBBA /* ScrumData.swift in Sources */,
 				378718632607B11A00390240 /* MeetingHeaderView.swift in Sources */,
 				3787182926064BD300390240 /* DailyScrum.swift in Sources */,
 				378718702607BAFD00390240 /* MeetingFooterView.swift in Sources */,
