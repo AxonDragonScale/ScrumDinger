@@ -15,6 +15,12 @@ struct MeetingView: View {
     // The objects lifecycle is tied to the view's lifecycle
     @StateObject var scrumTimer = ScrumTimer()
     
+    private let speechRecognizer = SpeechRecognizer()
+    @State private var isRecording = false
+    @State private var transcript = ""
+    
+    
+    
     var player: AVPlayer {
         return AVPlayer.sharedDingPlayer
     }
@@ -29,7 +35,7 @@ struct MeetingView: View {
                                   secondsRemaining: scrumTimer.secondsRemaining,
                                   scrumColor: scrum.color)
                 
-                MeetingTimerView(speakers: scrumTimer.speakers, scrumColor: scrum.color)
+                MeetingTimerView(speakers: scrumTimer.speakers, isRecording: isRecording, scrumColor: scrum.color)
                 
                 MeetingFooterView(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
             }
@@ -42,12 +48,19 @@ struct MeetingView: View {
                 player.seek(to: .zero)
                 player.play()
             }
+            speechRecognizer.record(to: $transcript)
+            isRecording = true
+            
             scrumTimer.startScrum()
         }
         .onDisappear {
             scrumTimer.stopScrum()
+            speechRecognizer.stopRecording()
+            isRecording = false
             
-            let newHistory = History(attendees: scrum.attendees, lengthInMinutes: scrum.lengthInMinutes)
+            let newHistory = History(attendees: scrum.attendees,
+                                     lengthInMinutes: scrumTimer.secondsElapsed / 60,
+                                     transcript: transcript)
             scrum.history.insert(newHistory, at: 0)
         }
     }
